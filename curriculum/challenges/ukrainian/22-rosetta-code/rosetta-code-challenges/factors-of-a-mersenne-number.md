@@ -10,7 +10,7 @@ dashedName: factors-of-a-mersenne-number
 
 A Mersenne number is a number in the form of <code>2<sup>P</sup>-1</code>.
 
-Якщо `P` є простим, то число Мерсенна може бути простим числом Мерсенна. (Якщо `P` не є простим, число Мерсенна також не є простим.)
+If `P` is prime, the Mersenne number may be a Mersenne prime. (If `P` is not prime, the Mersenne number is also not prime.)
 
 У пошуку простих чисел Мерсенна вигідно усунути експоненти, знайшовши невеликий фактор перед початком, потенційно довжину, <a href="https://rosettacode.org/wiki/Lucas-Lehmer test" target="_blank" rel="noopener noreferrer nofollow">тест Лукас-Лемер</a>.
 

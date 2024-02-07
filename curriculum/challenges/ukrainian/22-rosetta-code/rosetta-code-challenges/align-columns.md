@@ -12,7 +12,7 @@ Given an array of many lines, where fields within a line are delineated by a sin
 
 # --instructions--
 
-Щоб перевірити свої програми, використовуйте наступний текст:
+Use the following text to test your programs:
 
 ```js
 const testText = [
@@ -29,7 +29,7 @@ const testText = [
 ];
 ```
 
-**Зауважте, що:**
+**Note that:**
 
 - Введені тексти в прикладі можуть мати символ долара вкінці.
 - Усі стовпці повинні мати однакове вирівнювання.
@@ -38,7 +38,7 @@ const testText = [
 - Мінімальний простір між стовпцями слід обчислювати з даного тексту, а не жорстко його кодувати.
 - Не обов'язково додавати розділові символи між стовпцями або навколо них.
 
-Наприклад, один з рядків взятий із `testText`, після вирівнювання праворуч, ліворуч та посередині відповідно:
+For example, one of the lines from the `testText`, after justifying to the right, left and center respectively:
 
 ```js
 '    column        are separated     by     at    least       one space.\n'
@@ -54,19 +54,19 @@ const testText = [
 assert(typeof formatText === 'function');
 ```
 
-`formatText(testText, 'right')` має створити стовпець із текстом, який буде вирівняний по правій стороні.
+`formatText(testText, 'right')` should produce text with columns justified to the right.
 
 ```js
 assert.strictEqual(formatText(_testText, 'right'), rightAligned);
 ```
 
-`formatText(testText, 'left')` має створити стовпець із текстом, який буде вирівняний по лівій стороні.
+`formatText(testText, 'left')` should produce text with columns justified to the left.
 
 ```js
 assert.strictEqual(formatText(_testText, 'left'), leftAligned);
 ```
 
-`formatText(testText, 'center')` має створити стовпець із текстом, який буде вирівняний по центру.
+`formatText(testText, 'center')` should produce text with columns justified to the center.
 
 ```js
 assert.strictEqual(formatText(_testText, 'center'), centerAligned);

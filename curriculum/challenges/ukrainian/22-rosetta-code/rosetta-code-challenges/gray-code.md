@@ -88,7 +88,7 @@ assert.equal(gray(false, 233), 177);
 assert.equal(gray(false, 381), 425);
 ```
 
-`gray(false,725)`має повернути `870`.
+`gray(false,725)` should return `870`.
 
 ```js
 assert.equal(gray(false, 725), 870);
